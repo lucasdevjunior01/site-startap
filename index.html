@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AciolyTech - Desenvolvimento de Software</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon"></></span>
+          <span class="logo-text">Acioly<span class="logo-highlight">Tech</span></span>
+        </a>
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">Sobre</a></li>
+            <li><a href="#services" class="nav-link">Serviços</a></li>
+            <li><a href="#portfolio" class="nav-link">Projetos</a></li>
+            <li><a href="#contact" class="nav-link">Contato</a></li>
+          </ul>
+          <a href="#contact" class="btn btn-primary nav-cta">Fale Conosco</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <canvas id="particlesCanvas"></canvas>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-tagline">🚀 Transformando ideias em <span class="accent">código</span></p>
+          <h1 class="hero-title">
+            Desenvolvimento de<br />
+            <span class="gradient-text">Software Sob Medida</span>
+          </h1>
+          <p class="hero-description">
+            Somos especialistas em criar soluções digitais inovadoras — do planejamento
+            à entrega, com qualidade, performance e tecnologia de ponta.
+          </p>
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> Nossos Serviços
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i> Entrar em Contato
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="code-block">
+            <div class="code-block-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre class="code-block-content"><code><span class="code-keyword">const</span> <span class="code-func">startup</span> = <span class="code-paren">()</span> <span class="code-keyword">=></span> {
+  <span class="code-keyword">const</span> <span class="code-var">team</span> = <span class="code-string">"AciolyTech"</span>;
+  <span class="code-keyword">const</span> <span class="code-var">mission</span> = <span class="code-paren">[</span>
+    <span class="code-string">"Inovação"</span>,
+    <span class="code-string">"Qualidade"</span>,
+    <span class="code-string">"Resultados"</span>
+  <span class="code-paren">]</span>;
+
+  <span class="code-keyword">return</span> mission
+    .<span class="code-func">map</span><span class="code-paren">(</span><span class="code-var">m</span> <span class="code-keyword">=></span> <span class="code-template">`${team} × ${m}`</span><span class="code-paren">)</span>;
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Role para conhecer</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Sobre Nós</span>
+          <h2 class="section-title">Quem é a <span class="accent">AciolyTech</span>?</h2>
+          <p class="section-subtitle">
+            Conheça nossa história, valores e o que nos motiva a criar soluções incríveis.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card fade-in">
+            <div class="about-card-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Missão</h3>
+            <p>
+              Desenvolver softwares que resolvam problemas reais, impulsionando
+              negócios com tecnologia de alto impacto e usabilidade excepcional.
+            </p>
+          </div>
+          <div class="about-card fade-in" data-delay="200">
+            <div class="about-card-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Visão</h3>
+            <p>
+              Ser referência em desenvolvimento de software na América Latina,
+              reconhecida pela inovação, qualidade e compromisso com o cliente.
+            </p>
+          </div>
+          <div class="about-card fade-in" data-delay="400">
+            <div class="about-card-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Valores</h3>
+            <p>
+              Transparência, inovação contínua, foco no usuário, trabalho em equipe
+              e paixão por transformar ideias em soluções digitais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Serviços</span>
+          <h2 class="section-title">Nossas <span class="accent">Soluções</span></h2>
+          <p class="section-subtitle">
+            Oferecemos um ecossistema completo de desenvolvimento de software
+            para alavancar seu negócio.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card fade-in">
+            <div class="service-card-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Websites & Aplicações Web</h3>
+            <p>
+              Sites institucionais, landing pages, dashboards e plataformas web
+              completas com as tecnologias mais modernas do mercado.
+            </p>
+            <ul class="service-techs">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="service-card fade-in" data-delay="200">
+            <div class="service-card-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Aplicativos Mobile</h3>
+            <p>
+              Apps nativos e híbridos para iOS e Android com performance,
+              design intuitivo e experiências envolventes.
+            </p>
+            <ul class="service-techs">
+              <li>React Native</li>
+              <li>Flutter</li>
+              <li>Swift</li>
+              <li>Kotlin</li>
+            </ul>
+          </div>
+          <div class="service-card fade-in" data-delay="400">
+            <div class="service-card-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3>APIs & Backend</h3>
+            <p>
+              Arquiteturas robustas e escaláveis, APIs RESTful e GraphQL, microsserviços
+              e integrações com serviços cloud.
+            </p>
+            <ul class="service-techs">
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>PostgreSQL</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+          <div class="service-card fade-in" data-delay="600">
+            <div class="service-card-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Design de interfaces modernas, prototipação, pesquisa de usuário e
+              testes de usabilidade para produtos digitais.
+            </p>
+            <ul class="service-techs">
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Prototipagem</li>
+              <li>Design System</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portfólio</span>
+          <h2 class="section-title">Projetos em <span class="accent">Destaque</span></h2>
+          <p class="section-subtitle">
+            Alguns dos trabalhos que realizamos com muito orgulho e dedicação.
+          </p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item fade-in">
+            <div class="portfolio-item-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-store"></i>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <h4>E-Commerce Plus</h4>
+                  <p>Plataforma completa de e-commerce</p>
+                  <div class="portfolio-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                  </div>
+                  <a href="#" class="btn btn-small"
+                    ><i class="fas fa-external-link-alt"></i> Ver Projeto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item-info">
+              <h4>E-Commerce Plus</h4>
+              <p>Plataforma completa de e-commerce</p>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-delay="200">
+            <div class="portfolio-item-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <h4>FinanceDash</h4>
+                  <p>Dashboard financeiro inteligente</p>
+                  <div class="portfolio-tags">
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>PostgreSQL</span>
+                  </div>
+                  <a href="#" class="btn btn-small"
+                    ><i class="fas fa-external-link-alt"></i> Ver Projeto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item-info">
+              <h4>FinanceDash</h4>
+              <p>Dashboard financeiro inteligente</p>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-delay="400">
+            <div class="portfolio-item-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <h4>HealthTrack</h4>
+                  <p>Aplicativo de saúde e bem-estar</p>
+                  <div class="portfolio-tags">
+                    <span>React Native</span>
+                    <span>Firebase</span>
+                    <span>AI</span>
+                  </div>
+                  <a href="#" class="btn btn-small"
+                    ><i class="fas fa-external-link-alt"></i> Ver Projeto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item-info">
+              <h4>HealthTrack</h4>
+              <p>Aplicativo de saúde e bem-estar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats section">
+      <div class="container stats-grid">
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="50">0</span>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Projetos Entregues</p>
+        </div>
+        <div class="stat-item fade-in" data-delay="200">
+          <span class="stat-number" data-target="30">0</span>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Clientes Satisfeitos</p>
+        </div>
+        <div class="stat-item fade-in" data-delay="400">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Anos de Experiência</p>
+        </div>
+        <div class="stat-item fade-in" data-delay="600">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-percent">%</span>
+          <p class="stat-label">Satisfação</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Contato</span>
+          <h2 class="section-title">Vamos <span class="accent">Conversar</span>?</h2>
+          <p class="section-subtitle">
+            Tem um projeto em mente? Entre em contato e vamos transformar sua ideia em realidade.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info fade-in">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Localização</h4>
+                <p>Brasil</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>contato@aciolytech.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h4>Telefone</h4>
+                <p>+55 (11) 99999-8888</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4>Horário</h4>
+                <p>Seg - Sex: 09:00 - 18:00</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="#" class="contact-social-link" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="contact-social-link" aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="contact-social-link" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="contact-social-link" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <form class="contact-form fade-in" data-delay="200" id="contactForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="formName"
+                class="form-input"
+                placeholder="Seu nome"
+                required
+              />
+              <label for="formName" class="form-label">Nome</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="formEmail"
+                class="form-input"
+                placeholder="seu@email.com"
+                required
+              />
+              <label for="formEmail" class="form-label">Email</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="formSubject"
+                class="form-input"
+                placeholder="Assunto"
+              />
+              <label for="formSubject" class="form-label">Assunto</label>
+            </div>
+            <div class="form-group form-group-textarea">
+              <textarea
+                id="formMessage"
+                class="form-input"
+                rows="5"
+                placeholder="Sua mensagem"
+                required
+              ></textarea>
+              <label for="formMessage" class="form-label">Mensagem</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-icon"></></span>
+            <span class="logo-text">Acioly<span class="logo-highlight">Tech</span></span>
+          </a>
+          <p>
+            Transformando ideias em software de alto impacto. <br />
+            Inovação, qualidade e resultados.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#services">Websites</a></li>
+            <li><a href="#services">Apps Mobile</a></li>
+            <li><a href="#services">APIs & Backend</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 AciolyTech. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
